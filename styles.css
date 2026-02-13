@@ -1,0 +1,72 @@
+/* Reset básico */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #509bf0, #a6c1ee);
+    text-align: center;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    padding: 40px 20px;
+    color: white;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Cards */
+.card {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Botão */
+button {
+    margin: 30px 0;
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    background-color: #829df5;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #7087ee;
+    transform: scale(1.05);
+}
+
+/* Responsividade para celular */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    button {
+        width: 80%;
+    }
+}
+p {
+    margin: 15px 0;
+    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+}

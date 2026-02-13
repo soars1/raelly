@@ -1,0 +1,118 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #509bf0, #a6c1ee);
+    text-align: center;
+    color: #333;
+    padding-bottom: 40px;
+}
+
+/* Cabeçalho */
+header {
+    padding: 40px 20px;
+    color: white;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Card */
+.card {
+    background: white;
+    margin: 20px auto;
+    padding: 25px;
+    width: 85%;
+    max-width: 900px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Galeria */
+.photo-gallery {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.photo-gallery img {
+    width: 280px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.photo-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Botão */
+button {
+    margin-top: 30px;
+    padding: 12px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    background-color: #829df5;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #7087ee;
+    transform: scale(1.05);
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    .photo-gallery img {
+        width: 90%;
+    }
+
+    .card {
+        width: 92%;
+        padding: 20px;
+    }
+
+    button {
+        width: 80%;
+    }
+}
+/* Galeria começa escondida */
+.photo-gallery {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+
+    opacity: 0;
+    transform: scale(0.9);
+    transition: 0.5s ease;
+    pointer-events: none;
+}
+
+/* Quando ativar */
+.photo-gallery.mostrar {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+}

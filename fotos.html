@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raelly 💖</title>
+    <link rel="stylesheet" href="fotos.css">
+    <link rel="icon" type="image/png" href="icone.png">
+
+</head>
+
+<body>
+    <header>
+        <h1>Raelly ✨</h1>
+        <p>Para mostrar um pouco do meu amor por você 💕</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Fotos</h2>
+            <p>Clique no botão para revelar nossos momentos especiais 📸</p>
+
+            <button onclick="revelarFotos()">💙 Revelar Fotos</button>
+
+            <div class="photo-gallery" id="galeria">
+                <img src="foto1.jpeg" alt="Foto 1">
+                <img src="foto2.jpeg" alt="Foto 2">
+                <img src="foto3.jpeg" alt="Foto 3">
+            </div>
+        </section>
+    </main>
+
+    <button onclick="window.location.href='index.html'">Voltar ao início</button>
+
+    <!-- Script fica no final do body -->
+    <script>
+        function revelarFotos() {
+            document.getElementById("galeria").classList.toggle("mostrar");
+        }
+    </script>
+
+</body>
+</html>
